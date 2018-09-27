@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Trang chủ - Xe Đi Ké</title>
+    <LINK REL="SHORTCUT ICON" HREF="./img/icon.jpg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- font-awesome -->
+    <!-- fa4-$ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar--dark" style="padding: 0; margin-top: -50px;">
+        <a class="navbar-brand" href="#">
+            <img src="./img/img_logo_menu_white.png" alt="logo" class="mt-5">
+            <span>
+                <a href="./listTravel/list.html" class="listTravel text-white mt-5">Danh sách chuyến đi</a>
+            </span>
+        </a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto text-white">
+                <li class="nav-item active mt-4" style="cursor: pointer;">
+                    <div class="sign-up" style="margin-top: 40px">
+                        <a data-toggle="modal" data-target="#myModal" style="font-size: 17px;" class="text-white ho">
+                            Đăng nhập
+                        </a>
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body body">
+                                        <form action="" class="text-center sign__up">
+                                            <p style="font-size: 20px; color: black" class="pt-5">Đăng nhập</p>
+                                            <p style="color:black; font-size: 15px">Bạn chưa có tài khoản? <a href="registerCustomer.html">Đăng
+                                                    kí
+                                                </a></p>
+                                            <div class="input" ">
+                                                <input type="text " placeholder="Tên tài khoản " style="height: 40px; font-size:
+                                                20px " class="u ">
+                                                <br><br>
+                                                <input type="text " placeholder="Mật khẩu " style="height: 40px; font-size:
+                                                20px " class="u ">
+                                            </div>
+                                            <div class="row d-flex ">
+                                                <div class="col-6 form-check ">
+                                                    <label class="form-check-label " style="padding-top: 2px; color: black ">
+                                                        <input type="checkbox " class="form-check-input " value="
+                                                " style="padding: 0 30%;margin:5px -15px; color: black ">Ghi nhớ tài khoản
+                                                    </label>
+                                                </div>
+                                                <div class="col-6 " >
+                                                    <div class="quenMK ">
+                                                        <a href="# " style="font-size: 15px " data-toggle="modal
+                                                " data-target="#myModelQ ">Quên mật khẩu?</a>
+                                                        <div class="modal fade " id="myModelQ ">
+                                                          <div class="modal-dialog ">
+                                                            <div class="modal-content ">
+                                                              <div class="modal-body " style="color: black ">
+                                                                <form>
+                                                                      <h4 class="mt-5 ">Lấy lại mật khẩu</h4>
+                                                                      <p class="mt-5 " style="font-size: 15px ">Nhập số điện thoại của bạn và chúng tôi sẽ gửi cho bạn mã kích hoạt để tạo mật khẩu mới</p>
+                                                                      <input class="mt-5 " type="text " placeholder="Số
+                                                điện thoại " style="height: 40px; width: 400px ">
+                                                                      <button type="submit " class="btn btn-primary mt-5
+                                                " style=" margin-bottom: 105px; " >Gửi</button>
+                                                                </form>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>                                                        
+                                                      </div>                                                    
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary mt-4 " style=" height: 40px; width: 400px; ">Đăng nhập</button>
+                                            <div class="mt-4 ">
+                                                <p class="circle ">
+                                                    <span class="circle__item " style="font-size: 13px; color: black ">
+                                                        Chỉ dành cho hành khách
+                                                    </span>
+                                                </p>
+                                            </div>
+                                            <button class="btn text-white pb-3 mb-3 " style="background-color: #435b9a;
+                                                height: 40px; width: 400px; ">f Đăng nhập bằng Facebook</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# " >
+
+                        <div class="register " style="margin-top: 45px ">
+                            <!-- Button to Open the Modal -->
+                            <button type="button " class="btn btn-primary " style="font-size: 17px; margin-top: 3px;width:
+                                                100px; height: 40px; " data-toggle="modal " data-target="#myModalRegister ">
+                             Đăng kí
+                            </button>
+                            <!-- The Modal -->
+                            <div class="modal " id="myModalRegister ">
+                              <div class="modal-dialog ">
+                                <div class="modal-content ">
+                                  <!-- Modal body -->
+                                  <div class="modal-body mb-5 ">
+                                       <form action=" " style="color: black ">
+                                           <h4 style="color: black; ">Bạn muốn đăng ký với tài khoản</h4>
+                                           <div>
+                                                <p style="color:black; font-size: 15px; " class="you ">Bạn đã có tài khoản? 
+                                                        <a href="# " style="margin-left: 3px; padding-left: 5px; ">Đăng nhập</a>
+                                                    </p>
+                                           </div>
+                                            <div class="row d-flex ">
+                                                    <div class="col-1 "></div>
+                                                 <div class="col-4 register__left ">
+                                                      <a href="registerCustomer.html ">
+                                                           <img src="./img/img_signup_passenger.png " style="width: 120px;height:
+                                                185px;padding-top: 16px; " alt=" "data-toggle="modal " data-target="#hanhKhach ">
+                                                            <p style="color:black; font-size: 20px ">Hành Khách</p>
+                                                       </a>
+                                                       <div class="modal fade " id="hanhKhach ">
+                                                            <div class="modal-dialog ">
+                                                                <div class="modal-content ">
+                                                                    <!-- Modal body -->
+                                                                    <div class="modal-body HK ">
+                                                                        <form action=" " class="text-center HK_form ">
+                                                                                <p>Đăng kí tài khoản hành khách</p>
+                                                                                <p>Bạn đã có tài khoản</p>
+                                                                                <a href=" "><span style="color: black ">Bạn đã có tài khoản?</span> Đăng nhập</a>
+                                                                               <div class="cus pt-4 ">
+                                                                                  
+                                                                                      <div>
+                                                                                        <input type="text" placeholder="Tên tài khoản " class="d-block ">
+                                                                                        <input type="password" placeholder="Mật khẩu "class="d-block ">
+                                                                                        <input type="password " placeholder="Nhập lại mật khẩu "class="d-block ">
+                                                                                        <div>
+                                                                                                <input type="text " placeholder="Họ ">
+                                                                                                <input type="text" placeholder="Tên ">
+                                                                                        </div>
+                                                                                        <div>
+                                                                                                <input type="number" placeholder="Số điện thoai ">
+                                                                                                <input type="number" placeholder="Năm sinh " min="1970 ">
+                                                                                        </div>
+                                                                                      </div>
+                                                                                        <p>Khi đăng ký tài khoản, mặc định bạn đã đồng ý 
+                                                                                                với các 
+                                                                                                <a href="https://xedike.vn/pages/af7d4dd3-6b28-42b5-a1e8-7cc60b9cef1a
+                                                ">Điều khoản</a> và <a href="https://xedike.vn/pages/af7d4dd3-6b28-42b5-a1e8-7cc60b9cef1a ">Điều kiện hoạt động</a> của chúng tôi.</p>
+                                                                               </div>
+                                                                            <button class="btn btn-primary mt-4
+                                                " style=" height: 40px; width: 400px; ">Đăng nhập</button>
+                                                                            <div class="mt-4 ">
+                                                                                <p class="circle ">
+                                                                                    <span class="circle__item " style="font-size:
+                                                13px; color: black ">
+                                                                                       hoặc
+                                                                                    </span>
+                                                                                </p>
+                                                                            </div>
+                                                                            <button class="btn text-white pb-3 mb-3
+                                                " style="background-color: #435b9a; height: 40px; width: 400px; ">f Đăng nhập bằng Facebook</button>
+                                                                        </form>
+                                                                    </div>                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                                <div class="col-2 "></div>
+                                                <div class="col-4 register__right ">
+                                                        <a href="registerDriver.html ">
+                                                             <img src="./img/img_signup_driver.png " style="width: 120px;height:
+                                                185px;padding-top: 16px; " alt=" ">
+                                                              <p style="color:black; font-size: 20px ">Tài Xế</p>
+                                                         </a>
+                                                  </div>
+                                              <div class="col-1 mb-5 " ></div>
+
+                                            </div>
+                                        </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# " style=" margin-top: 46px; ">
+                        <a href="# " data-toggle="popover " data-placement="bottom " data-toggle="popover
+                                                " data-content="<p>Hỗ trợ <strong>Tài xế</strong>:
+                                                0905393497
+                                                </p>
+                                                <p>Hỗ trợ <strong>Tài xế</strong>: 0905393497</p>" data-html="true" class="text-white">...</a>
+                                                </a>
+                </li>
+            </ul>
+            </div>
+    </nav>
+    <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="carousel-inner">
+        <img src="./img/maxresdefault.jpg" alt="" style="height: 760px;">
+    </div>
+    <div class="carousel-caption d-none d-md-block ">
+        <h1 class="display-4 font-weight-bold ">Bắt đầu chuyến đi của bạn</h1>
+        <p>Đã có 1044 thành viên sử dụng dịch vụ trên toàn quốc</p>
+        <form class="d-flex justify-content-left " style="margin-left: -50px ">
+            <div class="goStart ">
+                <div class="input-group mb-3 ">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text text-success bg-white text-center " style="width: 50px;font-size:
+30px ">
+                            <i class="fa fa-map-marker "></i>
+                        </span>
+                        <input list="browsers " name="browser " placeholder="Nơi đến " style="height: 60px;
+width: 200; ">
+                        <datalist id="browsers ">
+                            <option>Bình Định</option>
+                            <option>Đà Nẵng</option>
+                            <option>Đông Hà</option>
+                            <option>Đồng Hới</option>
+                            <option>Hội An</option>
+                            <option>Quảng Ngãi</option>
+                            <option>Tam Kì</option>
+                            <option>Thừa Thiên Huế</option>
+                        </datalist>
+                    </div>
+
+                </div>
+            </div>
+            <div class="goEnd ">
+                <div class="input-group mb-3 ">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text text-danger bg-white text-center " style="width: 50px;font-size:
+30px ">
+                            <i class="fa fa-map-marker "></i>
+                        </span>
+                        <input list="browsers " name="browser " placeholder="Nơi đến " style="height: 60px;width:
+200; ">
+                        <datalist id="browsers ">
+                            <option>Đà Nẵng</option>
+                            <option>Đông Hà</option>
+                            <option>Thừa Thiên Huế</option>
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar ">
+                <div class="input-group mb-3 ">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text text-muted bg-white text-center " style="width: 50px;
+font-size: 30px ">
+                            <i class="fa fa-calendar "></i>
+                        </span>
+                        <input type="date" style="height: 60px; width: 150px; ">
+                    </div>
+                </div>
+            </div>
+            <div class="seating">
+                <div class="input-group mb-3 ">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text text-muted bg-white text-center " style="width: 50px; font-size: 30px ">
+                            <i class="fa fa-users "></i>
+                        </span>
+                        <input type="number" style="height: 60px; width: 200; ">
+                    </div>
+                </div>
+            </div>
+            <div class="button ">
+                <a href="# " class="btn btn-primary pt-3 btn-lg " style="width:150px;height: 60px; ">
+                    <span>
+                        <i class="fa fa-search "></i>
+                    </span> Tìm kiếm
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="carousel2 ">
+        <img src="./img/carousel2.jpg " alt="carousel2 " class="carousel2__item ">
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row p-0 pt-4 pb-4 rounded border-bottom " style="background-color: #E8E8E8 ">
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width: 230px; ">
+                    Thừa Thiên Huế
+                    <i class="fa fa-long-arrow-right "></i> Đà Nẵng
+                </div>
+                <div class="col pt-5 ">
+                    <i class="fa fa-calendar "></i> 15/8/2018 13:00
+                </div>
+            </div>
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width:201px; ">
+                    <i class="fa fa-car "></i>Toyota Fortuner 2017
+                </div>
+                <div class="col d-flex ">
+                    <div class="row pt-5 ">
+                        <div class="col "><i class="fa fa-users "></i> 0/7</div>
+                        <div class="col " style="width: 204px; "><i class="fa fa-truck "></i> Tận nơi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col ">
+                    <img src="./img/Capture.PNG " alt="boy " style="height: 40px; width: 40px " class="rounded-circle ">Nguyen
+                    Hien
+                </div>
+                <div class="col ">
+                    <div class="row pt-4 ">
+                        <div class="col ">
+                            <button type="button " style="height: 45px; width: 45px; border-radius: 50%; " class="btn
+        btn-warning ">3.0</button>
+                        </div>
+                        <div class="col pl-0 ">
+                            <div class="row pr-1 ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <div class="row " style="font-size: 12px ">
+                                Chưa đánh giá!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col pl-3 ">
+                <div class="row ">
+                    <h2>120.000<sup>đ</sup></h2>
+                </div>
+                <div class="row ">
+                    <button type="submit " class="btn btn-warning text-white mt-2 " style="background-color: #FF8000 ">Xem
+                        chuyến xe </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 pt-4 rounded border-bottom " style="background-color: #E8E8E8 ">
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width: 230px; ">
+                    Thừa Thiên Huế
+                    <i class="fa fa-long-arrow-right "></i> Đà Nẵng
+                </div>
+                <div class="col pt-5 ">
+                    <i class="fa fa-calendar "></i> 15/8/2018 13:00
+                </div>
+            </div>
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width:201px; ">
+                    <i class="fa fa-car "></i>Toyota Fortuner 2017
+                </div>
+                <div class="col d-flex ">
+                    <div class="row pt-5 ">
+                        <div class="col "><i class="fa fa-users "></i> 0/7</div>
+                        <div class="col " style="width: 204px; "><i class="fa fa-truck "></i> Tận nơi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col ">
+                    <img src="./img/Capture.PNG " alt="boy " style="height: 40px; width: 40px " class="rounded-circle ">Nguyen
+                    Hien
+                </div>
+                <div class="col ">
+                    <div class="row pt-4 ">
+                        <div class="col ">
+
+                            <button type="button " style="height: 45px; width: 45px; border-radius: 50%;
+        " class="btn btn-warning ">3.0</button>
+                        </div>
+                        <div class="col pl-0 ">
+                            <div class="row pr-1 ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <div class="row " style="font-size: 12px ">
+                                Chưa đánh giá!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col pl-3 ">
+                <div class="row ">
+                    <h2>120.000<sup>đ</sup></h2>
+                </div>
+                <div class="row ">
+                    <button type="submit " class="btn btn-warning text-white mt-2 " style="background-color: #FF8000 ">Xem
+                        chuyến xe </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 pt-4 rounded border-bottom " style="background-color: #E8E8E8 ">
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width: 230px; ">
+                    Thừa Thiên Huế
+                    <i class="fa fa-long-arrow-right "></i> Đà Nẵng
+                </div>
+                <div class="col pt-5 ">
+                    <i class="fa fa-calendar "></i> 15/8/2018 13:00
+                </div>
+            </div>
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width:201px; ">
+                    <i class="fa fa-car "></i>Toyota Fortuner 2017
+                </div>
+                <div class="col d-flex ">
+                    <div class="row pt-5 ">
+                        <div class="col "><i class="fa fa-users "></i> 0/7</div>
+                        <div class="col " style="width: 204px; "><i class="fa fa-truck "></i> Tận nơi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col ">
+                    <img src="./img/Capture.PNG " alt="boy " style="height: 40px; width: 40px " class="rounded-circle ">Nguyen
+                    Hien
+                </div>
+                <div class="col ">
+                    <div class="row pt-4 ">
+                        <div class="col ">
+                            <button type="button " style="height: 45px; width: 45px; border-radius: 50%;
+        " class="btn btn-warning ">3.0</button>
+                        </div>
+                        <div class="col pl-0 ">
+                            <div class="row pr-1 ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <div class="row " style="font-size: 12px ">
+                                Chưa đánh giá!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col pl-4 ">
+                <div class="row ">
+                    <h2>120.000<sup>đ</sup></h2>
+                </div>
+                <div class="row ">
+                    <button type="submit " class="btn btn-warning text-white mt-2 " style="background-color:
+        #FF8000 ">Xem chuyến xe </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 pt-4 rounded border-bottom " style="background-color: #E8E8E8 ">
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width: 230px; ">
+                    Thừa Thiên Huế
+                    <i class="fa fa-long-arrow-right "></i> Đà Nẵng
+                </div>
+                <div class="col pt-5 ">
+                    <i class="fa fa-calendar "></i> 15/8/2018 13:00
+                </div>
+            </div>
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width:201px; ">
+                    <i class="fa fa-car "></i>Toyota Fortuner 2017
+                </div>
+                <div class="col d-flex ">
+                    <div class="row pt-5 ">
+                        <div class="col "><i class="fa fa-users "></i> 0/7</div>
+                        <div class="col " style="width: 204px; "><i class="fa fa-truck "></i> Tận nơi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col ">
+                    <img src="./img/Capture.PNG " alt="boy " style="height: 40px; width: 40px " class="rounded-circle ">Nguyen
+                    Hien
+                </div>
+                <div class="col ">
+                    <div class="row pt-4 ">
+                        <div class="col ">
+                            <button type="button " style="height: 45px; width: 45px; border-radius: 50%;
+        " class="btn btn-warning ">3.0</button>
+                        </div>
+                        <div class="col pl-0 ">
+                            <div class="row pr-1 ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <div class="row " style="font-size: 12px ">
+                                Chưa đánh giá!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col pl-3 ">
+                <div class="row ">
+                    <h2>120.000<sup>đ</sup></h2>
+                </div>
+                <div class="row ">
+                    <button type="submit " class="btn btn-warning text-white mt-2 " style="background-color:
+        #FF8000 ">Xem chuyến xe </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-0 pt-4 rounded border-bottom " style="background-color: #E8E8E8 ">
+            <div class="col pl-0 pr-0 pb-5 ">
+                <div class="col " style="width: 230px; ">
+                    Thừa Thiên Huế
+                    <i class="fa fa-long-arrow-right "></i> Đà Nẵng
+                </div>
+                <div class="col pt-5 ">
+                    <i class="fa fa-calendar "></i> 15/8/2018 13:00
+                </div>
+            </div>
+            <div class="col pl-0 pr-0 ">
+                <div class="col " style="width:201px; ">
+                    <i class="fa fa-car "></i>Toyota Fortuner 2017
+                </div>
+                <div class="col d-flex ">
+                    <div class="row pt-5 ">
+                        <div class="col "><i class="fa fa-users "></i> 0/7</div>
+                        <div class="col " style="width: 204px; "><i class="fa fa-truck "></i> Tận nơi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="col ">
+                    <img src="./img/Capture.PNG " alt="boy " style="height: 40px; width: 40px
+        " class="rounded-circle ">Nguyen Hien
+                </div>
+                <div class="col ">
+                    <div class="row pt-4 ">
+                        <div class="col ">
+                            <button type="button " style="height: 45px; width: 45px; border-radius:
+        50%; " class="btn btn-warning ">3.0</button>
+                        </div>
+                        <div class="col pl-0 ">
+                            <div class="row pr-1 ">
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star "></i>
+                            </div>
+                            <div class="row " style="font-size: 12px ">
+                                Chưa đánh giá!
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col pl-3 ">
+                <div class="row ">
+                    <h2>120.000<sup>đ</sup></h2>
+                </div>
+                <div class="row ">
+                    <button type="submit " class="btn btn-warning text-white mt-2 " style="background-color:#FF8000 ">Xem
+                        chuyến xe </button>
+                </div>
+            </div>
+        </div>
+        <div class="arrow ">
+            <a href="https://xedike.vn/trips " style="margin-left: 88% ">Xem thêm <i class="fa fa-long-arrow-right
+        text-primary "></i></a>
+        </div>
+    </div>
+    </div>
+    <!-- Begin travel -->
+    <div class="begin mt-5 ">
+        <div class="row ">
+            <div class="col-sm-1 ">
+            </div>
+            <div class="col-sm-5 d-flex begin-left pr-0 pt-4 ">
+                <img src="./img/img_driver_2.png " alt="driver1 ">
+                <img src="./img/img_driver_3.png " alt="driver1 ">
+                <img src="./img/img_driver_1.png " alt="driver1 " style="margin-left: -450px; ">
+            </div>
+            <div class="col-sm-5 begin-right pt-5 ">
+                <h3 class="pb-4 "> Bắt đầu chuyến đi của bạn</h3>
+                <p class="text-muted pb-4 ">Là người sẽ mang những chuyến xe cũng như những trải nghiệm cho Khách hàng. Các
+                    tài xế luôn là những người hiểu rõ Khách hàng cần những gì là tốt nhất. Tất nhiên, chúng tôi có những
+                    Quy định cụ thể để đảm bảo lợi ích lớn nhất cho tất cả các bên.</p>
+                <button class="btn btn-primary text-white " style="width: 150px ">Trở thành tài xế</button>
+            </div>
+            <div class="col-sm-1 ">
+            </div>
+        </div>
+    </div>
+    <!-- Use XEDIKE.VN -->
+
+    <div class="use_travel ">
+        <div class="row ">
+            <div class="col-sm-12 text-center pt-5 ">
+                <h2>Tại sao sử dụng XEDIKE.VN?</h2>
+                <p class="text-muted pt-3 ">Dưới đây là một trong những lí do cho việc lựa chọn.</p>
+            </div>
+        </div>
+        <div class="row pt-4 reason pb-5 ">
+            <div class="col-4 text-center ">
+                <img src="./img/img_trust.png " alt=" ">
+                <h5 class="pt-4 ">Tin tưởng</h5>
+                <p class="text-muted pt-2 ">Bạn sẽ biết tài xế và bạn đồng hành của bạn là ai. Điều đó giúp bạn có những
+                    trải nghiệm tốt hơn trên hành trình của mình.</p>
+            </div>
+            <div class="col-4 text-center ">
+                <img src="./img/img_safe.png " alt=" ">
+                <h5 class="pt-4 ">Chủ động</h5>
+                <p class="text-muted pt-2 ">Thời gian chờ, số ghế trống, giá cả, chất lượng tài xế, các đánh giá, … tất cả
+                    sẽ được hiển thị rõ ràng để bạn yên tâm đặt chuyến đi.</p>
+            </div>
+            <div class="col-4 text-center " style="margin-top: 10px; ">
+                <img src="./img/img_love_car.png " alt=" ">
+                <h5 class="pt-4 ">Môi trường</h5>
+                <p class="text-muted pt-2 ">Mỗi 2 người đi chung một xe tương đương với việc trồng 4 cây xanh cho việc hấp
+                    thụ khí C02 trong vòng 1 năm.</p>
+            </div>
+        </div>
+    </div>
+    <!-- begin information XEDIKE -->
+    <div>
+        <div class="image ">
+            <img src="./img/night-street-background.jpg " class="img1 " alt="image ">
+        </div>
+        <div class="info pt-5 ">
+            <div class="row info__item ">
+                <div class="col-6 info__item1 ">
+                    <img src="./img/img_mac.png " style="height: 330px; " alt="mac ">
+                    <img src="./img/img_iPad.png " alt="ipad ">
+                </div>
+                <div class="col-6 info__item2 ml-auto pt-5 ">
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <h1 class="text-primary ">612</h1>
+                            <h4>Hành khách</h4>
+                            <p>Hàng nghìn lượt khách tin tưởng chúng tôi để tìm những chuyến xe với chất lượng tốt nhất.</p>
+                        </div>
+                        <div class="col-6 ">
+                            <h1 class="text-primary ">438</h1>
+                            <h4>Tài xế</h4>
+                            <p>Hệ thống của chúng tôi kết nối hàng trăm tài xế sẵn sàng phục vụ nhu cầu đi lại mỗi ngày.</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <h1 class="text-primary ">371</h1>
+                            <h4>Chuyến xe</h4>
+                            <p>Số liệu này cho chúng tôi biết bạn đã về đến nhà an toàn</p>
+                        </div>
+                        <div class="col-6 ">
+                            <h1 class="text-primary ">2188.52</h1>
+                            <h4>Khí CO2 được giảm (kg)</h4>
+                            <p>Chúng ta đã góp phần làm giảm lượng khí CO2 trung bình mỗi ngày. <br> <br> Trái Đất sẽ rất
+                                biết ơn chúng ta về điều này.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end information XEDIKE -->
+
+    <!-- begin sign up -->
+    <div class="signup p-4 ">
+        <div class="row ">
+            <div class="col-3 text-right ">
+                <img src="./img/img_gift.png " alt=" ">
+            </div>
+            <div class="col-6 ">
+                <h5 class="text-white ">Hoàn thành Chuyến xe để nhận Ưu đãi cho các Chuyến sau</h5>
+                <p class="text-white ">
+                    Huray! Hãy click HOÀN THÀNH, và để lại những đánh giá của bạn về chuyến đi của mình để nhận được điểm tích lũy cho những
+                    chuyến đi tiếp theo.
+                </p>
+            </div>
+            <div class="col-3 ">
+                <button class="btn btn-light text-warning m-4 ">Đăng nhập ngay!</button>
+            </div>
+        </div>
+    </div>
+    <!-- end sign up -->
+
+    <!-- begin footer -->
+    <footer class="footer pt-5 ">
+        <div class="row ">
+            <div class="col-3 cot-1 ">
+                <img src="./img/img_logo_footer.png " alt="footer " height="85 ">
+                <div class="footer__item ">
+                    <span><i class="fa fa-phone text-muted "></i> </span>
+                    <strong ">Hỗ trợ Hành Khách:</strong>
+            <span ">0905.93.34.53</span>
+                </div>
+                <div class="footer__item ">
+                    <span><i class="fa fa-phone text-muted "></i> </span>
+                    <strong ">Hỗ trợ Tài xế:</strong>
+                <span ">0905.93.34.53</span>
+                </div>
+                <div class="footer__item ">
+                    <span><i class="fa fa-envelope text-muted "></i> </span>
+                    <strong ">Email:</strong>
+                    <span ">cs@xedike.vn</span>
+                </div>
+                <div class="logo d-flex mr-5 pb-5 ">
+                    <a href="https://www.facebook.com/xedikemientrungvn/">
+                        <img src="./img/facebook.png " alt="facebook ">
+                    </a>
+                    <img src="./img/ic_zalo.png " alt="zalo ">
+                    <img src="./img/linkedin.png " alt="linkedin ">
+                </div>
+            </div>
+            <div class="col-3 cot-2 pt-4 ">
+                <strong>Thông tin</strong>
+                <ul class="text-muted ">
+                    <li>Liên hệ</li>
+                    <li>Đội ngũ</li>
+                    <li>Tuyển dụng</li>
+                    <li>Những câu hỏi thường gặp</li>
+                </ul>
+            </div>
+            <div class="col-3 cot-2 pt-4 ">
+                <strong>Xe Đi Ké</strong>
+                <ul class="text-muted ">
+                    <li>Điều khoản sử dụng</li>
+                    <li>Chính sách Bảo mật thông tin</li>
+                    <li>Quy chế sàn giao dịch</li>
+                    <li>Cơ chế giải quyết tranh chấp</li>
+                </ul>
+            </div>
+            <div class="col-3 cot-2 pt-4 ">
+                <strong>Hỗ trợ</strong>
+                <ul class="text-muted ">
+                    <li>Đăng kí làm Tài xế</li>
+                    <li>Đăng ký hành khách</li>
+                    <li>Hành lí thất lạc</li>
+                    <li>Điều kiện Hủy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-5 logoo ">
+            <div class="col-4 ">
+                <div class="row p-0 ">
+                    <div class="col-8 p-0 pt-2 " style="font-size: 12px ">
+                        <span style="color: #f96d00 ">Bản quyền © 2018 XeDiKe.vn. Giữ toàn quyền.</span>
+                    </div>
+                    <div class="col-4 p-0 pb-5 ">
+                        <a target="_blank " href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=42537
+                        "><img src="./img/logo_bo_cong_thuong.png " alt=" " style="height: 40px "></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="row p-0 ">
+                    <div class="col-5 p-0 pt-2 " style="font-size: 12px ">
+                        <span class="text-right " style="color: #f96d00 ">BEmpowered by DNES</span>
+                    </div>
+                    <div class="col-7 p-0 pb-5 ">
+                        <a target="_blank " href="http://dnes.vn/ "><img src="./img/logo_dnes.jpg " alt="
+                        " style="height: 40px "></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ">
+                <div class="row p-0 ">
+                    <div class="col-8 p-0 pt-2 " style="font-size: 12px ">
+                        <p style="color:#f96d00 ">Phát triển bởi <span style="color: black ">Sioux High Tech Software Ltd.
+                            </span></p>
+                    </div>
+                    <div class="col-4 p-0 pb-5 ">
+                        <a target="_blank " href="https://www.sioux.asia/ "><img src="./img/img_logo_sioux.jpg
+                        " alt=" " style="height: 40px "></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
+        crossorigin="anonymous "></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover "]').popover();
+        });
+    </script>
+</body>
+
+</html>
